@@ -11,12 +11,14 @@ from sklearn.preprocessing import StandardScaler
 app = Flask(__name__, template_folder='templates')
 
 model = pickle.load(open('random_forest_regression_model.pkl', 'rb'))
+#@app is flask imported object app
 @app.route('/',methods=['GET'])
 def Home():
     return render_template('index.html')
 
 
 standard_to = StandardScaler()
+#@app is flask imported object app
 @app.route("/predict", methods=['POST'])
 def predict():
     Fuel_Type_Diesel=0
@@ -58,3 +60,4 @@ def predict():
 
 if __name__=="__main__":
     app.run(debug=True)
+    #@app is flask imported object app
