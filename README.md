@@ -1,6 +1,16 @@
 # ML-Model-Flask-Deployment
 # Car_Price_Prediction
 
+This dataset contains information about used cars.
+This data can be used for a lot of purposes such as price prediction to exemplify the use of linear regression in Machine Learning.
+
+
+## Approach:
+
+By using Linear RandomForset Regressor , we are predicting the Car price based on user input data
+
+Here we used Flask web application Framework and deployed in Heroku cloud platform (Platform As A service-PAAS) 
+
 This is a demo project to elaborate how Machine Learn Models are deployed on production using Flask API
 
 ## Prerequisites
